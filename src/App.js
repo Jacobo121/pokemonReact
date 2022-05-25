@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Navigation from './components/navigation/Navigation';
+import {useState} from 'react';
+import Fire from './components/Fire';
+import Water from './components/Water';
+import Rock from './components/Rock';
 
 function App() {
+  const [poke, setPoke] = useState('pokemon');
+
+  const handlerPoke = (num) => {
+    if(num === 1) {
+      setPoke(<Fire />)
+    } else if(num === 2) {
+      setPoke(<Water />)
+    } else if(num === 3) {
+      setPoke(<Rock />)
+    }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation pokeFn={handlerPoke} />
+      {
+        poke
+      }
     </div>
   );
 }
