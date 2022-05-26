@@ -7,6 +7,9 @@
     margin: 30px;
     border-radius: 30px;
     justify-content: center;
+    -webkit-box-shadow: 17px 18px 20px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 17px 18px 20px -4px rgba(0,0,0,0.75);
+    box-shadow: 17px 18px 20px -4px rgba(0,0,0,0.75);
 }
 
 .card_img img {
