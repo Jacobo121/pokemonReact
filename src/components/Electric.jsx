@@ -1,16 +1,16 @@
 import React from "react";
 import Pokebola from "./Pokebola";
 import { pokemonData } from "../pokemonInfo";
-import '../styles/pokeBolaStyles.css';
+import "../styles/pokeBolaStyles.css";
 
-const Fire = () => {
+const Electric = () => {
   return (
     <div className="container">
-      {pokemonData.fire.map((item) => (
+      {pokemonData.electric.map((item) => (
         <Pokebola name={item.pokemonName} avatar={item.avatar} />
       ))}
     </div>
   );
 };
 
-export default Fire;
+export default Electric;

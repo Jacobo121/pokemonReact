@@ -4,9 +4,10 @@ import {useState} from 'react';
 import Fire from './components/Fire';
 import Water from './components/Water';
 import Rock from './components/Rock';
+import Electric from './components/Electric';
 
 function App() {
-  const [poke, setPoke] = useState('pokemon');
+  const [poke, setPoke] = useState(<h1 className='title'>Presiona un boton</h1>);
 
   const handlerPoke = (num) => {
     if(num === 1) {
@@ -15,15 +16,18 @@ function App() {
       setPoke(<Water />)
     } else if(num === 3) {
       setPoke(<Rock />)
+    } else if(num === 4) {
+      setPoke(<Electric />)
     }
   }
 
   return (
-    <div className="App">
+    <div className="App">      
       <Navigation pokeFn={handlerPoke} />
-      {
-        poke
-      }
+        {
+          poke
+        }
+        
     </div>
   );
 }

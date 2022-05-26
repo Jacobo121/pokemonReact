@@ -1,0 +1,25 @@
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #2a9d8f;
+    width: 500px;
+    height: 250px;
+    margin: 30px;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.card_img img {
+    width: 200px;
+    height: 200px;
+}
+
+.card h1 {
+    margin-left: 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,10 +1,13 @@
 import React from 'react';
+import '../styles/pokeBolaStyles.css';
 
 const Pokebola = (props) => {
     return (
-        <div>
+        <div className='card'>
+            <div className='card_img'>
+                <img src={props.avatar}  alt=""/>
+            </div>
             <h1>{props.name}</h1>
-            <img src={props.avatar}  alt=""/>
         </div>
     );
 }

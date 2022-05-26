@@ -1,0 +1,49 @@
+.button {
+    padding: 20px 100px;
+    margin: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fire {
+    background-color: #f4a261;
+}
+
+.fire:hover {
+    transition: 0.4s;
+    background-color: #f4a3618c;
+}
+
+.water {
+    background-color: #f4a261;
+
+}
+
+.water:hover {
+    transition: 0.4s;
+    background-color: #f4a3618c;
+    
+}
+
+.rock {
+    background-color: #f4a261;
+}
+
+.rock:hover {
+    transition: 0.4s;
+    background-color: #f4a3618c;
+    
+}
+
+.electric {
+    background-color: #f4a261;
+}
+
+.electric:hover {
+    transition: 0.4s;
+    background-color: #f4a3618c;
+    
+}

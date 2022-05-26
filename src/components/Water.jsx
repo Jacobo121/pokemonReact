@@ -1,10 +1,12 @@
 import Pokebola from "./Pokebola";
 import React from "react";
 import { pokemonData } from "../pokemonInfo";
+import '../styles/pokeBolaStyles.css';
+
 
 const Water = () => {
   return (
-    <div>
+    <div className="container">
       {pokemonData.water.map((item) => (
         <Pokebola name={item.pokemonName} avatar={item.avatar} />
       ))}
