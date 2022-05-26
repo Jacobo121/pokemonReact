@@ -7,7 +7,7 @@ const Fire = () => {
   return (
     <div className="container">
       {pokemonData.fire.map((item) => (
-        <Pokebola name={item.pokemonName} avatar={item.avatar} />
+        <Pokebola key={item.id} name={item.pokemonName} avatar={item.avatar} />
       ))}
     </div>
   );

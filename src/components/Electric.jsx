@@ -7,7 +7,7 @@ const Electric = () => {
   return (
     <div className="container">
       {pokemonData.electric.map((item) => (
-        <Pokebola name={item.pokemonName} avatar={item.avatar} />
+        <Pokebola key={item.id} name={item.pokemonName} avatar={item.avatar} />
       ))}
     </div>
   );
