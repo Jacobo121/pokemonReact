@@ -1,13 +1,28 @@
 import React from 'react';
 import '../styles/pokeBolaStyles.css';
 
-const Pokebola = (props) => {
+const Pokebola = ({element, type}) => {
+
+    const objBg = {
+        fire: "red",
+        water: "blue",
+        rock: "gray",
+        electric: "yellow"
+    }
+
     return (
-        <div className='card'>
-            <div className='card_img'>
-                <img src={props.avatar}  alt=""/>
-            </div>
-            <h1>{props.name}</h1>
+        <div className='card' >
+            {
+                element.map(item =>
+                    <div style={{backgroundColor: objBg[type]}}>
+                        <div className='card_img'>
+                            <img src={item.avatar}  alt=""/>
+                        </div>
+                        <h1>{item.pokemonName}</h1>
+                    </div>
+                )
+            }
+                
         </div>
     );
 }

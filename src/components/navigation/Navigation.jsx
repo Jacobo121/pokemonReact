@@ -1,17 +1,29 @@
-import '../../styles/navigationStyles.css';
+import "../../styles/navigationStyles.css";
+import React from "react";
 
-const Navigation = ({pokeFn}) => {
-    return (
-        <div>
-            <div>
-                <img src='https://images.wikidexcdn.net/mwuploads/esssbwiki/thumb/7/77/latest/20111028181540/TituloUniversoPok%C3%A9mon.png/550px-TituloUniversoPok%C3%A9mon.png' alt="" />
-            </div>
-            <button className='button fire ' onClick={() => pokeFn(1)} >Fire</button>
-            <button className='button water' onClick={() => pokeFn(2)} >Water</button>
+const Navigation = ({ pokeFn, num, type }) => {
+  const objBg = {
+    fire: "red",
+    water: "blue",
+    rock: "gray",
+    electric: "yellow",
+  };
+
+  return (
+    <React.Fragment>
+      <button
+        onClick={() => pokeFn({ num })}
+        style={{ backgroundColor: objBg[type] }}
+        className="button fire "
+      >
+        {type}
+      </button>
+
+      {/* <button className='button water' onClick={() => pokeFn(2)} >Water</button>
             <button className='button rock' onClick={() => pokeFn(3)} >Rock</button>
-            <button className='button electric' onClick={() => pokeFn(4)} >Electric</button>
-        </div>
-    );
-}
+            <button className='button electric' onClick={() => pokeFn(4)} >Electric</button> */}
+    </React.Fragment>
+  );
+};
 
 export default Navigation;
