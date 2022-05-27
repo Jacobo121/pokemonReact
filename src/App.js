@@ -3,6 +3,7 @@ import Navigation from "./components/navigation/Navigation";
 import { useState } from "react";
 import { pokemonData } from "./pokemonInfo";
 import Fire from "./components/Fire";
+import Pokebola from "./components/Pokebola";
 
 function App() {
   const [poke, setPoke] = useState(
@@ -11,15 +12,14 @@ function App() {
   const arrOfKey = Object.keys(pokemonData);
 
   const handlerPoke = (num) => {
-    console.log(num)
     if (num === 0) {
-      setPoke(<Fire element={pokemonData.fire}  type={arrOfKey[num]} />);
+      setPoke(<Pokebola element={pokemonData.fire}  type={arrOfKey[num]} />);
     } else if (num === 1) {
-      setPoke(<Fire element={pokemonData.water} type={arrOfKey[num]} />);
+      setPoke(<Pokebola element={pokemonData.water} type={arrOfKey[num]} />);
     } else if (num === 2) {
-      setPoke(<Fire element={pokemonData.rock} type={arrOfKey[num]} />);
+      setPoke(<Pokebola element={pokemonData.rock} type={arrOfKey[num]} />);
     } else if (num === 3) {
-      setPoke(<Fire element={pokemonData.electric} type={arrOfKey[num]} />);
+      setPoke(<Pokebola element={pokemonData.electric} type={arrOfKey[num]} />);
     }
   };
 
