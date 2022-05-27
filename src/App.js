@@ -2,7 +2,6 @@ import "./App.css";
 import Navigation from "./components/navigation/Navigation";
 import { useState } from "react";
 import { pokemonData } from "./pokemonInfo";
-import Fire from "./components/Fire";
 import Pokebola from "./components/Pokebola";
 
 function App() {

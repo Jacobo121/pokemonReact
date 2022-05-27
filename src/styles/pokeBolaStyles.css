@@ -1,15 +1,9 @@
 .card {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    /* background-color: #2a9d8f; */
-    width: 500px;
-    height: 250px;
     margin: 30px;
-    border-radius: 30px;
     justify-content: center;
-    -webkit-box-shadow: 17px 18px 20px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 17px 18px 20px -4px rgba(0,0,0,0.75);
-    box-shadow: 17px 18px 20px -4px rgba(0,0,0,0.75);
 }
 
 .card_img img {
@@ -21,8 +15,31 @@
     margin-left: 15px;
 }
 
-.container {
+.cardPoke {
+    margin: 20px;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    width: 500px;
+    height: 250px;
+    border-radius: 30px;
+    -webkit-box-shadow: 17px 18px 20px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 17px 18px 20px -4px rgba(0,0,0,0.75);
+    box-shadow: 17px 18px 20px -4px rgba(0,0,0,0.75);
+}
+
+.card_fire {
+    background-color: #e76f51;
+}
+
+.card_water {
+    background-color: #2a9d8f;
+}
+
+.card_rock {
+    background-color: #dda15e;
+}
+
+.card_electric {
+    background-color: #e9c46a;
 }

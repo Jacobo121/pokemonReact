@@ -3,19 +3,18 @@ import '../styles/pokeBolaStyles.css';
 
 const Pokebola = ({element, type}) => {
 
-    const objBg = {
-        fire: "red",
-        water: "blue",
-        rock: "gray",
-        electric: "yellow"
-    }
-
+    const objClass = {
+        fire: "fire",
+        water: "water",
+        rock: "rock",
+        electric: "electric",
+      }
 
     return (
         <div className='card' >
             {
                 element.map(item =>
-                    <div style={{backgroundColor: objBg[type]}}>
+                    <div className={`cardPoke card_${objClass[type]}`}>
                         <div className='card_img'>
                             <img src={item.avatar}  alt=""/>
                         </div>
