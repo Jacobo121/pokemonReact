@@ -10,6 +10,7 @@ const Pokebola = ({element, type}) => {
         electric: "yellow"
     }
 
+
     return (
         <div className='card' >
             {
